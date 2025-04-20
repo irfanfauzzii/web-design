@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meng Ide - Jasa Desain</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .navbar {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+    .navbar .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .navbar .logo h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-menu li {
+      margin-left: 25px;
+    }
+    .nav-menu li a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+    .nav-menu li a:hover,
+    .nav-menu li a.active {
+      color: #ff9900;
+    }
+
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 40px;
+    }
+    .hero-section .left {
+      flex: 1;
+      max-width: 50%;
+    }
+    .hero-section .left h1 {
+      font-size: 42px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .hero-section .left p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .cta-button {
+      margin-top: 25px;
+      background-color: #ff9900;
+      padding: 12px 24px;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .cta-button:hover {
+      background-color: #e08700;
+    }
+    .hero-section .right {
+      flex: 1;
+      text-align: center;
+    }
+    .hero-section .right img {
+      max-width: 300px;
+    }
+
+    .showcase-gallery {
+      padding: 60px 40px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .showcase-gallery h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .gallery-item {
+      width: 300px;
+    }
+    .gallery-item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .gallery-item p {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+    .social-icons img {
+      width: 35px;
+    }
+    .social-icons h1 {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="image/logo.png" alt="Logo" />
+        <h1>Meng Ide</h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="left" data-aos="fade-right">
+      <h1>Layanan Desain Profesional</h1>
+      <p>Kami menyediakan berbagai layanan desain kreatif seperti poster edukasi, CV profesional, branding, dan banyak lagi. Dapatkan hasil berkualitas dengan harga terjangkau.</p>
+      <a href="order.html" class="cta-button">Order Sekarang</a>
+    </div>
+    <div class="right" data-aos="fade-left">
+      <img src="image/logo.png" alt="Hero Image" />
+    </div>
+  </section>
+
+  <!-- Showcase Section -->
+  <section class="showcase-gallery" data-aos="fade-up">
+    <h2>Hasil Karya Kami</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="image/gambar1.jpg" alt="Poster" />
+        <p>Desain Poster Edukasi Modern</p>
+      </div>
+      <div class="gallery-item">
+        <img src="image/gambar2.jpg" alt="CV" />
+        <p>CV Profesional & Minimalis</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mengide.id?igsh=MTd3c3M1bmswYW0yNQ==" target="_blank">
+        <img src="image/image.png" alt="Instagram" />
+      </a>
+      <h1>@mengide.id</h1>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

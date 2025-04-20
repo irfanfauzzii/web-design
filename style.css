@@ -1,0 +1,197 @@
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8c7;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #f3b000;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  border-bottom: 2px solid #f3b000;
+  color: #f3b000;
+}
+
+/* Container content */
+.container {
+  display: flex;
+  width: 80%;
+  margin: 100px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  background-color: #f6e94e;
+  padding: 60px 40px;
+  color: white;
+}
+
+.left h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.read-more {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  position: relative;
+}
+
+/* Logo area */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: black;
+}
+
+.logo-text .brand {
+  font-size: 18px;
+}
+
+.logo-text .design {
+  font-size: 14px;
+}
+
+/* Gallery section */
+.showcase-gallery {
+  padding: 40px 20px;
+  background: #fffde7;
+  text-align: center;
+}
+
+.showcase-gallery h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.gallery-item p {
+  padding: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Responsive (Optional tapi direkomendasikan) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-area {
+    position: static;
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
